@@ -5,7 +5,7 @@
 ENABLED=`nvram get MULTIFILTER_ENABLE`
 echo $ENABLED
 if [ $ENABLED = "2" ]; then
-    echo "Disabling PC"
+    echo "Disabling Parental Control"
     nvram set MULTIFILTER_URL_ENABLE=""
     nvram set MULTIFILTER_ALL="0"
     nvram set MULTIFILTER_MACFILTER_DAYTIME=""
@@ -15,7 +15,7 @@ if [ $ENABLED = "2" ]; then
     nvram set MULTIFILTER_URL=""
     nvram set MULTIFILTER_MAC=""
 else
-    echo "Enabling PC"
+    echo "Enabling Parental Control"
     nvram set MULTIFILTER_URL_ENABLE=""
     nvram set MULTIFILTER_ALL="1"
     nvram set MULTIFILTER_MACFILTER_DAYTIME="<"
