@@ -1,6 +1,3 @@
-# wget -O - https://raw.githubusercontent.com/dmitrybabich/asus-parental-control-switcher/master/script.sh | bash
-# sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/dmitrybabich/asus-parental-control-switcher/master/script.sh)" root
-
 # rm script.sh && wget https://raw.githubusercontent.com/dmitrybabich/asus-parental-control-switcher/master/script.sh && chmod +x script.sh
 ENABLED=`nvram get MULTIFILTER_ENABLE`
 echo $ENABLED
