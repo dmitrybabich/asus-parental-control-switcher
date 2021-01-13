@@ -15,14 +15,14 @@ if [ $ENABLED = "2" ]; then
     nvram set MULTIFILTER_URL=""
     nvram set MULTIFILTER_MAC=""
 else
-    echo "Enabling Parental Control"
+    echo "Enabling Parental Control for 70:BC:10:92:90:DD"
     nvram set MULTIFILTER_URL_ENABLE=""
     nvram set MULTIFILTER_ALL="1"
     nvram set MULTIFILTER_MACFILTER_DAYTIME="<"
     nvram set MULTIFILTER_TMP=""
     nvram set MULTIFILTER_DEVICENAME="XBOX"
     nvram set MULTIFILTER_ENABLE="2"
-    nvram set MULTIFILTER_MAC="30:AB:6A:7A:35:83"
+    nvram set MULTIFILTER_MAC="70:BC:10:92:90:DD"
     nvram set MULTIFILTER_URL=""
 fi
 echo "Applying changes"
